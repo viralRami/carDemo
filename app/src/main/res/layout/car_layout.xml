@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:layout_margin="15dp"
+    android:elevation="5dp">
+   <androidx.appcompat.widget.LinearLayoutCompat
+       android:id="@+id/llCarId"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toStartOf="@id/llCarYear">
+       <androidx.appcompat.widget.AppCompatTextView
+           android:id="@+id/txtCarIdTitle"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/car_id"
+     />
+       <androidx.appcompat.widget.AppCompatTextView
+           android:id="@+id/txtCarIdValue"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/car_name"
+           android:layout_marginStart="10dp" />
+   </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+       android:id="@+id/llCarYear"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toEndOf="@+id/llCarName"
+       app:layout_constraintEnd_toEndOf="parent">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtCarYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/car_year"
+
+/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtCarYearValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/car_name"
+        android:layout_marginStart="10dp"
+
+        />
+   </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+       android:id="@+id/llCarName"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       app:layout_constraintTop_toBottomOf="@id/llCarId"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toStartOf="@id/llCarModel">
+       <androidx.appcompat.widget.AppCompatTextView
+           android:id="@+id/txtCarTitle"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/car_name"
+           android:layout_marginTop="10dp"
+     />
+       <androidx.appcompat.widget.AppCompatTextView
+           android:id="@+id/txtCarName"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/car_name"
+           android:layout_marginStart="10dp"
+           android:layout_marginTop="10dp"/>
+   </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+       android:id="@+id/llCarModel"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/llCarId"
+       app:layout_constraintStart_toEndOf="@+id/llCarName"
+       app:layout_constraintEnd_toEndOf="parent">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtCarModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/model"
+        android:layout_marginTop="10dp"
+
+/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtCarModelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/car_name"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+
+        />
+   </androidx.appcompat.widget.LinearLayoutCompat>
+   <androidx.appcompat.widget.LinearLayoutCompat
+       android:id="@+id/llCarColor"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       app:layout_constraintTop_toBottomOf="@id/llCarName"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toStartOf="@id/llCarModel">
+       <androidx.appcompat.widget.AppCompatTextView
+           android:id="@+id/txtCarColor"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/color"
+           android:layout_marginTop="10dp"
+           />
+       <androidx.appcompat.widget.AppCompatTextView
+           android:id="@+id/txtCarColorName"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/car_name"
+           android:layout_marginStart="10dp"
+           android:layout_marginTop="10dp"
+           />
+   </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+       android:id="@+id/llCarPrice"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       app:layout_constraintTop_toBottomOf="@id/llCarName"
+       app:layout_constraintStart_toEndOf="@+id/llCarName"
+       app:layout_constraintEnd_toEndOf="parent">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtCarPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+        android:layout_marginTop="10dp"
+
+/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtCarPriceValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/car_name"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+
+        />
+   </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

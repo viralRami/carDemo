@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">carListDemo</string>
+    <string name="car_name">Car Name :</string>
+    <string name="model">Model :</string>
+    <string name="price">Price :</string>
+    <string name="color">Color :</string>
+    <string name="car_id">car ID :</string>
+    <string name="car_year">Car Year :</string>
+    <string name="odd">Odd</string>
+    <string name="even">Even</string>
+    <string name="short_by_id">Short By ID:</string>
+    <string name="filter_year">Filter Year :</string>
+    <string-array name="range_year">
+        <item >1985</item>
+        <item >2022</item>
+    </string-array>
+    <string-array name="range_price">
+        <item >1000</item>
+        <item >4000</item>
+    </string-array>
+</resources>
